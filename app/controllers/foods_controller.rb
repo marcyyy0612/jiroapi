@@ -8,6 +8,14 @@ class FoodsController < ApplicationController
     render json: @foods
   end
 
+  def search_genre
+    genre = params[:genre_id]
+    return render json: {error: "genreを設定してください"}.to_json unless genre.present?
+    @foods = Food.where(genre: genre)
+
+    render json: @foods
+  end
+
   # GET /foods/1
   def show
     render json: @food
