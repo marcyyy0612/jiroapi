@@ -5,7 +5,7 @@ namespace :food_db_insert do
     Food.delete_all
     data_list = [
                         { name: "庶民のにんにく", genre: 0, price: 300, image_url: "https://tguchi.s3.amazonaws.com/uploads/topic_item/image/68432/retina_pixta_14786383_S.jpg"},
-                        { name: "一般ののにんにく", genre: 0, price: 50000, image_url: "https://kenka2.com/uploads/article/image/878/card_67_06-1.jpg"},
+                        { name: "一般のにんにく", genre: 0, price: 50000, image_url: "https://kenka2.com/uploads/article/image/878/card_67_06-1.jpg"},
                         { name: "高級なにんにく", genre: 0, price: 4000, image_url: "https://kenka2.com/uploads/article/image/878/card_67_06-1.jpg"},
 
                         { name: "庶民の豚", genre: 2, price: 50000, image_url: "https://st3.depositphotos.com/1010050/15695/i/1600/depositphotos_156955716-stock-photo-raw-pork-steak.jpg"},
@@ -20,7 +20,7 @@ namespace :food_db_insert do
                         { name: "一般の醤油", genre: 5, price: 350000, image_url: "http://yonebishi.co.jp/wordpress/wp-content/uploads/2012/02/hinagiku_720.jpg"},
                         { name: "高級な醤油", genre: 5, price: 4000, image_url: "http://www.andojyozo.co.jp/images/detailed/1/%E7%94%9F%E9%86%A4%E6%B2%B9360.jpg"},
 
-                        { name: "庶民の麺", genre: 6, price: 3300, image_url: "http://www.tsurumiseimen.com/image2014/namamen001.png"},
+                        { name: "庶民の麺", genre: 6, price: 3300, image_url: "http://muromen.com/images/material/namaramen01-1.jpg"},
                         { name: "一般の麺", genre: 6, price: 6000, image_url: "http://www.kitakata.co.jp/mujin/img/prejudice/p2_p1.jpg"},
                         { name: "高級な麺", genre: 6, price: 34000, image_url: "http://menya-nagomi.com/images/ban22naka.png"},
                 ]
