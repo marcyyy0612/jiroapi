@@ -16,6 +16,36 @@ class FoodsController < ApplicationController
     render json: @foods
   end
 
+  def starter_list
+    starter_2000 = [
+                    Food.find_by(name: "庶民のにんにく"),
+                    Food.find_by(name: "庶民の豚"),
+                    Food.find_by(name: "庶民のもやし"),
+                    Food.find_by(name: "庶民の醤油"),
+                    Food.find_by(name: "庶民の麺")
+                   ]
+    starter_5000 = [
+                    Food.find_by(name: "一般のにんにく"),
+                    Food.find_by(name: "一般の豚"),
+                    Food.find_by(name: "一般のもやし"),
+                    Food.find_by(name: "一般の醤油"),
+                    Food.find_by(name: "一般の麺")
+                   ]
+
+    starter_10000 = [
+                    Food.find_by(name: "高級なにんにく"),
+                    Food.find_by(name: "高級な豚"),
+                    Food.find_by(name: "高級なもやし"),
+                    Food.find_by(name: "高級な醤油"),
+                    Food.find_by(name: "高級な麺")
+                   ]
+    render json: {
+                  starter_2000: starter_2000,
+                  starter_5000: starter_5000,
+                  starter_10000: starter_10000
+                 }.to_json
+  end
+
   # GET /foods/1
   def show
     render json: @food
